@@ -20,7 +20,7 @@ class Bot {
 
     this.#authFolder = config.authFolder || "auth";
     this.#selfReply = config.selfReply || false;
-    this.#logMessages = config.logMessages || true;
+    this.#logMessages = "logMessages" in config? config.logMessages : true;
   }
 
   async connect() {

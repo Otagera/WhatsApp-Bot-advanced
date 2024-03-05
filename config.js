@@ -4,18 +4,19 @@
 const botConfig = {
   authFolder: "auth",
   selfReply: false,
-  logMessages: true,
+  logMessages: false,
 };
 
 const pluginsConfig = {
-  mirror: {
-    prefix: "!mirror!",
-  },
   roles: {
     dataFile: "./roles.json",
     prefix: "!role ",
     updateOnAdd: false,
     updateOnRemove: false,
+  },
+  needlecasts: {
+    dataFile: "./needlecast.json",
+    prefix: "!needlecast "
   },
   tagEveryone: {
     membersLimit: 100,
